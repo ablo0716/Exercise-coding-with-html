@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {    /* <!-- For the navigation --> example for color */
     background-color: rgb(211, 211, 211);
 }
@@ -79,9 +83,98 @@ a {/* element selector */
 .my-link {/* class selector */
   color: blue;  
 }
-.button:hover.active {
+
+header {
+  /* <!-- For the navigation --> example for color */
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+.container {
+  max-width: 1200px;
+}
+.social-icon { /* Sizes for icons */
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+footer .container {
+  padding: 15px 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work-section .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero-section h1 {
+  text-align: center; /* Centers text */
+}
+
+#hero-section {
+  background-color: #faeddb;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.center {   /* aligns h1 text? */
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #ffecd6;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  /*start shadow ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #ffffff; 
+	border: solid #ebebeb 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+.button:hover.active { 
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul { /* only selects unordered lists within the nav element*/
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li { /* only selects list elements in unordered lists within the nav element.*/
+  display: inline-block;
+}
+nav > ul > li > a:visited {  /*links that are list elements within an unordered list within the nav.*/ 
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
