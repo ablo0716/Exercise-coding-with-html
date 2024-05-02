@@ -138,9 +138,8 @@ header {
   text-align: center;
   padding: 10px 0;
   position: fixed;
+  width: 100%;
   /*start shadow ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
 	background: #ffffff; 
 	border: solid #ebebeb 1px; 
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
@@ -154,8 +153,6 @@ main {
 
 .css-box-shadow{
 	/*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
 	background: #F8F8F8; 
 	border: solid #BDBDBD 1px; 
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
