@@ -9,7 +9,7 @@ body {    /* <!-- For the navigation --> example for color */
 body {
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 1px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -84,14 +84,6 @@ a {/* element selector */
   color: blue;  
 }
 
-header {
-  /* <!-- For the navigation --> example for color */
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
-
-.container {
-  max-width: 1200px;
-}
 .social-icon { /* Sizes for icons */
   display: inline-block;
   width: 32px;
@@ -101,6 +93,7 @@ header {
 /* Layout styling */
 .container {
   padding: 0 15px;
+  max-width: 1200px;
 }
 
 footer .container {
@@ -110,6 +103,7 @@ footer .container {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+
 #work-section .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -119,23 +113,31 @@ footer .container {
   text-align: center; /* Centers text */
 }
 
+#hero-section span {
+  display: block;
+}
+
 #hero-section {
   background-color: #faeddb;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 .center {   /* aligns h1 text? */
   text-align: center;
 }
+
 .logo {
   max-width: 250px;
 }
+
 header {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   background-color: #ffecd6;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
   /*start shadow ------------*/
 	width: [object Object]px; 
 	height: [object Object]px; 
@@ -145,6 +147,11 @@ header {
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
+
+main {
+  padding-top: 267px;
+}
+
 .css-box-shadow{
 	/*start ------------*/
 	width: [object Object]px; 
@@ -163,6 +170,9 @@ nav {
   display: inline-block;
   width: 100%;
 }
+header h2 {
+  display: inline-block;
+}
 nav > ul { /* only selects unordered lists within the nav element*/
   list-style-type: none;
   padding: 0;
@@ -170,11 +180,17 @@ nav > ul { /* only selects unordered lists within the nav element*/
 nav > ul > li { /* only selects list elements in unordered lists within the nav element.*/
   display: inline-block;
 }
-nav > ul > li > a:visited {  /*links that are list elements within an unordered list within the nav.*/ 
+nav > ul > li > a {  /*links that are list elements within an unordered list within the nav.*/ 
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+nav > ul > li > a:visited {  /*links that are list elements within an unordered list within the nav.*/ 
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b2abab;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
