@@ -260,6 +260,10 @@ Medium devices (640px and larger)
     padding: 10px 0 13px;
   }
 
+  main {
+    padding-top: 205px;
+  }
+
   .logo {
     float: left;
   }
@@ -270,12 +274,15 @@ Medium devices (640px and larger)
     margin-top: 60px;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
   .col-md-6 {
     width: 50%;
   }
-  [class*="col-md-6"] {
-    float: left;
-  }
+
   #about-page h3 { margin-top: 0;}
 }
 /* ==============================
@@ -283,27 +290,15 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px)
 {
-  [class*="col-lg-8"] {
-    float: left;
-  } */
-
-  [class*="col-lg-7"] {
-    float: left;
+  .col-lg-7 {
+    width: 60%;
   }      
-  [class*="col-lg-5"] {
-    float: right;
+  .col-lg-5 {
+    width: 40%;
   }
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-  [class*="col-xl-4"] {
-    float: left;
   }
 }
