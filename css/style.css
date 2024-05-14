@@ -177,19 +177,16 @@ footer .container {
   width: 100%;
 }
 
-.center {   /* aligns h1 text? */
-  text-align: center;
-}
-
 .logo {
-  max-width: 250px;
+  font-size: 1em;
+  text-align: center;
+  max-width: 150px;
 }
 
 header {
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   background-color: #ffecd6;
-  text-align: center;
-  padding: 10px 0;
+  padding: 12px 0 0;
   position: fixed;
   width: 100%;
   /*start shadow ------------*/
@@ -201,7 +198,7 @@ header {
 }
 
 main {
-  padding-top: 267px;
+  padding-top: 87px;
 }
 
 .css-box-shadow{
@@ -216,10 +213,6 @@ main {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-nav {
-  display: inline-block;
-  width: 100%;
-}
 header h2 {
   display: inline-block;
 }
@@ -227,9 +220,36 @@ nav > ul { /* only selects unordered lists within the nav element*/
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li { /* only selects list elements in unordered lists within the nav element.*/
-  display: inline-block;
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #727272;
+}
+
 nav > ul > li > a {  /*links that are list elements within an unordered list within the nav.*/ 
   padding: 0 15px;
   text-transform: uppercase;
@@ -266,6 +286,8 @@ Medium devices (640px and larger)
 
   .logo {
     float: left;
+    max-width: 250px;
+    font-size: 2.25em;
   }
 
   nav {
@@ -281,6 +303,22 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  nav > ul > li { /* only selects list elements in unordered lists within the nav element.*/
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul { /* only selects unordered lists within the nav element*/
+    margin: 1em 0;
   }
 
   #about-page h3 { margin-top: 0;}
