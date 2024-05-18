@@ -281,13 +281,13 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 205px;
+    padding-top: 169px;
   }
 
   .logo {
     float: left;
     max-width: 250px;
-    font-size: 2.25em;
+    font-size: 1.8em;
   }
 
   nav {
