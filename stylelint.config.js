@@ -1,6 +1,7 @@
 "use strict"
 
 module.exports = {
+  "files": ["*.css"],
   "rules": {
     "at-rule-no-unknown": true,
     "block-no-empty": true,
